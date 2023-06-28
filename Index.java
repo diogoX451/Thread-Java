@@ -6,7 +6,6 @@ class MinhaThread extends Thread {
     }
 }
 
-// Em seguida, no método main ou em outro lugar adequado, inicie a thread
 public class Index {
     public static void main(String[] args) {
         MinhaThread t1 = new MinhaThread();
