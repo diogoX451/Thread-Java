@@ -4,11 +4,11 @@ public class ConcorrenciaEspera extends Thread {
     public static void main(String[] args) {
     ConcorrenciaEspera thread = new ConcorrenciaEspera();
     thread.start();
-    // Wait for the thread to finish
+
     while(thread.isAlive()) {
       System.out.println("Waiting...");
     }
-    // Update amount and print its value
+
     System.out.println("Main: " + amount);
     amount++;
     System.out.println("Main: " + amount);
